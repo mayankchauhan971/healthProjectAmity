@@ -3,11 +3,11 @@
 
 
 /******************************
-        generic heading
+      generic heading
 ******************************/
 .content-title{
- font-size:30px;
- text-align: center;
+font-size:30px;
+text-align: center;
 padding-bottom: 50px: 
 background-color: #3d3d3d;
 font-weight: 500;
@@ -15,233 +15,295 @@ font-weight: 500;
 }
 
 .content-title-Underline{
-   margin: 0px auto 10px auto;
-   width: 90%;
-   height: 2px;
-   background-color: #18dcff;
-   margin-bottom: 50px; 
+  margin: 0px auto 10px auto;
+  width: 90%;
+  height: 2px;
+  background-color: #18dcff;
+  margin-bottom: 50px; 
 }
 
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Yanone Kaffeesatz', 'sans-serif';
-  font-weight: 300;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 40px;
+font-family: 'Yanone Kaffeesatz', 'sans-serif';
+font-weight: 300;
+text-transform: uppercase;
+font-weight: 500;
+font-size: 40px;
 }
 
 h2 {
-  font-size: 36px
+font-size: 36px
 }
 
 /******************************
-            parallax
+          parallax
 ******************************/
 
 .bg-parallax{
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-    background-attachment: fixed;		
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+  background-attachment: fixed;		
 }
 
 /****************************************
-             HOME
+            HOME
 *****************************************/
 html{
-	width: 100%;
-	height: 100%;
+width: 100%;
+height: 100%;
 }
 body{
-	width: 100%;
-	height: 100%;
+width: 100%;
+height: 100%;
 }
 
 
 /****************************************
-             rural - urban services
+            rural - urban services
 *****************************************/
 #Rural-Services,
 #Urban-Services,
 #For-Profit,
 #For-Non-Profit{
-	display: none;
+display: none;
 }
 
 
 /************************************
-      CUSTOM CSS FOR IMAGE GALERY SECTION
+    CUSTOM CSS FOR IMAGE GALERY SECTION
 ************************************/
 .previous{
-	width: 100%;
-	height: 100%;
+width: 100%;
+height: 100%;
 }
 .previous [class *=col-] {
-	padding-left: 10px;
-	padding-right: 10px;
+padding-left: 10px;
+padding-right: 10px;
 
 }
 .imgGallery{
-	overflow: hidden;
+overflow: hidden;
 }
 .imgGallery img{
-	width: 100%;
-	height: 100%;
-	border-radius: 50px;
-    /* transition: transform.5s ease; */
-	/* cursor: zoom-in; */
-	
+width: 100%;
+height: 100%;
+border-radius: 50px;
+  /* transition: transform.5s ease; */
+/* cursor: zoom-in; */
+
 }
 .imgGallery img:hover{
-	transform: scale(0.9);
-    transition-duration: 2s;
-    border-radius: 80px;
-    transition: transform.5s ease;
+transform: scale(0.9);
+  transition-duration: 2s;
+  border-radius: 80px;
+  transition: transform.5s ease;
 }
 
 
 /************************************
-      OUR TEAM
+    OUR TEAM
 ************************************/
 .about-content-box {
-	float: left;
-	height: 200px;
+float: left;
+height: 200px;
 }
 
 #cta{
-  position: -webkit-sticky;
-  position: fixed;
-  bottom: 0;
-  right : 0;
-  z-index: 2;
-  padding: 15px;
+position: -webkit-sticky;
+position: fixed;
+bottom: 0;
+right : 0;
+z-index: 2;
+padding: 15px;
+  }
+  
+  h4 a {
+    color: #000;
+    /* font-size: 2em; */
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    /* position: relative; */
+    /* font-family: 'Dosis', sans-serif; */
+  }
+a.effect-shine:hover {
+  
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 2s infinite;
+  }
+  
+  @-webkit-keyframes shine {
+    from {
+      -webkit-mask-position: 150%;
     }
     
+    to {
+      -webkit-mask-position: -50%;
+    }
+  }    
+  .caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+
+  .caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 50px;
+    letter-spacing: 10px;
+  }
+
+.parallax { 
+  /* The image used */
+  background-image: url("https://images.unsplash.com/photo-1533025782032-634283c7c7ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80");
+  /* Set a specific height */
+  height: 100%;  
+  background-attachment: fixed;
+  background-position: auto;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-size: 100% 110%;
+
+}
+h1.display-4{
+text-align: right;
+font-size: 100px;
+}
+
 #cta-button
 {
-  padding: 10px;
-  border-radius: 10;
-  color: white;
-  background-color: #ff4081;
-  border-radius: 32px;
+padding: 10px;
+border-radius: 10;
+color: white;
+background-color: #ff4081;
+border-radius: 32px;
 
 }    
 
 .about-content-box-outer{
-	width: 100%;
-	height: 100%;
-	display: table;
+width: 100%;
+height: 100%;
+display: table;
 }
 .about-content-box-inner{
-	display: table-cell;
-	vertical-align: middle;
+display: table-cell;
+vertical-align: middle;
 }
 
 
 #about-bg-diagnol_1{
-	width: 50%;
-	height: 600px;
-	float: right;
-    background-image: url("../images/team/prince.jpg");
-    border-left: 300px solid  #d2dce5;
-	border-top: 600px solid transparent;
+width: 50%;
+height: 600px;
+float: right;
+  background-image: url("../images/team/prince.jpg");
+  border-left: 300px solid  #d2dce5;
+border-top: 600px solid transparent;
 }
 #about-bg-diagnol_2{
-	width: 50%;
-	height: 600px;
-	float: right;
-    background-image: url("../images/team/shubham.jpg");
-    border-left: 300px solid  #d2dce5;
-	border-top: 600px solid transparent;
+width: 50%;
+height: 600px;
+float: right;
+  background-image: url("../images/team/shubham.jpg");
+  border-left: 300px solid  #d2dce5;
+border-top: 600px solid transparent;
 }
 
 /*navigation bar*/
 
 .wrapper{
-	overflow: hidden;
+overflow: hidden;
 }
 .navbar-right {
-  background-color: #12181e;
-  padding:0 95px 0 0;
-  opacity: .9;
-  }
+background-color: #12181e;
+padding:0 95px 0 0;
+opacity: .9;
+}
 
 .navbar-right li a {
-  padding: 35px 21px;
-  font-size: 22px;
-  color: #fff;
-  text-transform: uppercase;
-  font-family: 'Yanone Kaffeesatz', 'sans-serif';
-  font-weight: 300;
-  transition: transform.5s ease;
-
-
+padding: 35px 21px;
+font-size: 22px;
+color: #fff;
+text-transform: uppercase;
+font-family: 'Yanone Kaffeesatz', 'sans-serif';
+font-weight: 300;
+transition: transform.5s ease;
 }
 
 .navbar-right li a:hover,
 .navbar-right li a:focus,
 .navbar-right .active a {
-  background-color: white;
-  color: black;
-  font-weight: 500;
-  transform: scale(1.3);
+background-color: white;
+color: black;
+font-weight: 500;
+transform: scale(1.3);
 }
 
 
 .fixed-menu {
-  background-color: black;
-  position: fixed;
-  top: 0;
+background-color: black;
+position: fixed;
+top: 0;
 }
 
 .fixed-menu .navbar-right {
-  padding: 0;
+padding: 0;
 }
 
 
 .fixed-menu .navbar-right li a {
-  font-size: 18px;
-  padding: 20px 25px;
-  text-shadow:inherit;
+font-size: 18px;
+padding: 20px 25px;
+text-shadow:inherit;
 }
 
 /* modal */
 
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+padding-top: 250px; /* Location of the box */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
 /* Modal Content */
 .modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
+background-color: #fefefe;
+margin: auto;
+padding: 20px;
+border: 1px solid #888;
+width: 80%;
 }
+
+.imageFunction {
+  width: 100%;
+}
+
 
 /* The Close Button */
 .close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+color: #aaaaaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+color: #000;
+text-decoration: none;
+cursor: pointer;
 }
